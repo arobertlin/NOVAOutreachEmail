@@ -14,7 +14,7 @@ Fill in sender_email as your own email address in send_email.py.
 Write your own message within send_email.py. There are two places to do this. Text is the plaintext version, and html is the html version. The html should be enough, but if for some reason a person has their email set up to only receive plaintext, the plaintext version will make sure it is delivered.
 
 ## Debugging
-I would reccomend debugging you email by sending it to yourself a couple times before running it on all of the names. To debug, make sure you comment out server.sendmail on line 86.
+I would reccomend debugging you email by sending it to yourself a couple times before running it on all of the names. Make a csv with your own name and email to debug fully and run the script.
 
 ## Running
 Run it on the command line with ```python send_email.py```. You will be prompted to enter your email password on the commandline. Do it and hit enter. It should send your email to every person with a customized name :)
