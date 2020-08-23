@@ -24,7 +24,7 @@ password = input("Type your password and press enter:")
 for i in range(len(first_names)):
     print(first_names[i], emails[i])
 
-    sender_email = "arlin@princeton.edu"
+    sender_email = "email" # FILL THIS IN
     receiver_email = emails[i]
 
     message = MIMEMultipart("alternative")
@@ -34,21 +34,21 @@ for i in range(len(first_names)):
 
     # Create the plain-text and HTML version of your message
     text = """Hi """+ first_names[i] + """!
-    Welcome to Princeton! I’m Andrew, a senior and a member of a Christian group on campus called Christian Union NOVA, and each year we like to reach out to the incoming class early on to invite you to become part of our large, supportive community. Trust me, it’s a great community to be a part of! NOVA is filled with really likable, awesome people from all four classes, which makes you feel like you have tons of friends and endless sources of guidance.
+    Welcome to Princeton! I’m NAME, a senior and a member of a Christian group on campus called Christian Union NOVA, and each year we like to reach out to the incoming class early on to invite you to become part of our large, supportive community. Trust me, it’s a great community to be a part of! NOVA is filled with really likable, awesome people from all four classes, which makes you feel like you have tons of friends and endless sources of guidance.
     
     On a more intimate level, NOVA offers bible studies that meet once a week. There are also large weekly meetings called Encounter and Tru Thursday, as well as one-on-one parternships with older students. I know remote learning will make it even more challenging to start a new school and make friends, so hopefully NOVA's community can help you start making sense of Princeton! If you're interested in learning more, the NOVA open house zoom link is https://princeton.zoom.us/j/92218456650 and is coming up soon on Thursday, August 27th from 8-9 ET.
     
     You can also follow our accounts on Instagram if you would like to learn more (@christianunionnova) and (@TruThursday). There may be a gear giveaway on them so be on the lookout!
     
     Can’t wait to meet you! Good luck with everything!
-    Andrew
+    NAME
     """
     html = """\
     <html>
       <body>
         <p>
         Hi """ + first_names[i] + """! <br><br>
-        Welcome to Princeton! I’m Andrew, a senior and a member of a Christian group on campus called Christian Union NOVA,
+        Welcome to Princeton! I’m NAME, a senior and a member of a Christian group on campus called Christian Union NOVA,
         and each year we like to reach out to the incoming class early on to invite you to become part of our large, supportive community.
         Trust me, it’s a great community to be a part of! NOVA is filled with really likable, awesome people from all four classes,
         which makes you feel like you have tons of friends and endless sources of guidance.<br><br>
@@ -65,7 +65,7 @@ for i in range(len(first_names)):
     There may be a gear giveaway on them so be on the lookout!
     <br><br>
         Can’t wait to meet you! Good luck with everything!<br>
-        Andrew</p>
+        NAME</p>
       </body>
     </html>
     """
